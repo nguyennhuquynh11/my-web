@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Tường</title>
+    <style>
+        /* Cài đặt kiểu chung cho trang */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        /* Bài viết */
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .post {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .post:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .post img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .post img:hover {
+            transform: scale(1.05);
+        }
+
+        .post .content {
+            padding: 20px;
+        }
+
+        .post h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #34495e;
+            text-transform: capitalize;
+        }
+
+        .post p {
+            font-size: 16px;
+            color: #7f8c8d;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            .post h2 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .post h2 {
+                font-size: 20px;
+            }
+
+            .post img {
+                height: 180px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Báo Tường Trường Nguyễn Bỉnh Khiêm</h1>
+        <p>Chào mừng bạn đến với báo tường của chúng tôi, nơi chia sẻ những thông tin bổ ích và hấp dẫn.</p>
+    </header>
+
+    <section class="articles">
+        <article class="post">
+            <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2023/9/5/len-lop1-1693876158651448499659.jpg" alt="Chào mừng năm học mới">
+            <div class="content">
+                <h2>Bài viết 1: Chào mừng năm học mới</h2>
+                <p>Đây là bài viết đầu tiên của chúng tôi về năm học mới. Hy vọng năm học này sẽ đầy niềm vui và thành công. Chúng ta sẽ cùng nhau học hỏi và phát triển!</p>
+            </div>
+        </article>
+
+        <article class="post">
+            <img src="https://vieclam123.vn/ckfinder/userfiles/images/hoat-dong-ngoai-khoa-nam-ngoai-chuong-trinh-hoc.jpg" alt="Hoạt động ngoại khóa">
+            <div class="content">
+                <h2>Bài viết 2: Hoạt động ngoại khóa</h2>
+                <p>Chúng ta sẽ có rất nhiều hoạt động ngoại khóa sôi động trong tháng này. Đừng bỏ lỡ các hoạt động thú vị và bổ ích ngoài giờ học!</p>
+            </div>
+        </article>
+
+        <article class="post">
+            <img src="https://tutinvaodoi.vn/wp-content/uploads/2023/02/cuoi-ky.png" alt="Kỳ thi cuối kỳ">
+            <div class="content">
+                <h2>Bài viết 3: Những điều cần biết về kỳ thi cuối kỳ</h2>
+                <p>Hãy chuẩn bị thật tốt cho kỳ thi cuối kỳ sắp tới. Đây là những thông tin quan trọng mà bạn cần nắm vững để đạt kết quả tốt nhất!</p>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Báo Tường Trường Nguyễn Bỉnh Khiêm. All rights reserved.</p>
+ </html>
+   </footer>
+</body>
+
+
